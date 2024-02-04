@@ -1,0 +1,38 @@
+/* src/styles/NavBar.css */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 26px;
+  background-color: #ff8a01;
+  color: white;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: "Londrina Solid", cursive; 
+
+}
+
+.logo {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  margin-right: 10px;
+}
+
+.menu {
+  display: flex;
+}
+
+.menuItem {
+  margin-right: 26px;
+  font-size: 26px;
+  cursor: pointer;
+  transition: color 0.3s ease; 
+}
+
+.menuItem:hover {
+  color: #dddddd;
+}

@@ -1,6 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  --laranja: #ff8a00;
+  --verde-oliva: #887320;
+  --marrom: #806240;
+  --branco: #ffffff;
+  --cinza-claro: #bebebe;
+  --creme: #fffbf1;
+}
+
 /* src/styles/App.css */
 .app-container {
   margin: 0;
   padding: 0;
-  background-color: #ffffff; 
+  background-color: var(--branco);
+  font-family: "Londrina Solid", cursive; 
 }

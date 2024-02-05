@@ -1,0 +1,62 @@
+#beneficios {
+    height: 50vh;
+    background-color: var(--verde-oliva);
+    padding: 4em;
+}
+
+.beneficios-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.beneficios-content h4{
+    font-size: 3rem;
+    color: var(--creme);
+    font-weight: normal;
+}
+
+.beneficios-content h5{
+    font-size: 1.2rem;
+    font-weight: lighter;
+    color: var(--cinza-claro);
+}
+
+.beneficio-container {
+    display: flex;
+    gap: 16px;
+    padding-top: 2rem;
+}
+
+.beneficio {
+    border-radius: 0.8rem;
+    background-color: var(--creme);
+    color: var(--verde-oliva);
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;                 /* Para que cada div ocupe a mesma largura e o espaço seja distribuído igualmente */
+    padding: 1rem; 
+}
+
+.beneficio-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.beneficio-title h6 {
+    font-weight: lighter;
+    font-size: 1.2rem;
+    padding-left: 0.5rem;
+}
+
+.beneficio p {
+    color: var(--cinza-claro);
+    font-weight: 100;
+}
+
+

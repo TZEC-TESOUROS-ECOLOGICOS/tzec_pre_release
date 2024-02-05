@@ -4,12 +4,10 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 26px;
-  background-color: #ff8a01;
-  color: white;
+  background-color: var(--laranja);
+  color: var(--branco);
   width: 100%;
   box-sizing: border-box;
-  font-family: "Londrina Solid", cursive; 
-
 }
 
 .logo {

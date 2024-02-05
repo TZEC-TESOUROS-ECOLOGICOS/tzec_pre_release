@@ -9,9 +9,12 @@ function NavBar() {
         <img src="/logo_navbar.svg" alt="Logo" height="42" />
       </div>
       <div className="menu">
-        <div className="menuItem">Início</div>
-        <div className="menuItem">Sobre nós</div>
-        <div className="menuItem">Contato</div>
+        <ul>
+          <a href="#"><li>Início</li></a>
+          <a href="#beneficios"><li>Benefícios</li></a>
+          <a href="#depoimentos"><li>Depoimentos</li></a>
+          <a href="#contato"><li>Contato</li></a>
+        </ul>
       </div>
     </nav>
   );

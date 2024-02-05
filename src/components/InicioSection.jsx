@@ -20,7 +20,7 @@ function InicioSection() {
   };
 
   return (
-    <section className="inicio-section">
+    <section id="inicio">
       <div className="inicio-content">
         <div className="left-content">
           <h2>Tesouros Ecológicos</h2>

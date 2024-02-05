@@ -3,34 +3,33 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 1.2rem;
   background-color: var(--laranja);
   color: var(--branco);
   width: 100%;
   box-sizing: border-box;
-}
-
-.logo {
-  font-size: 20px;
-  display: flex;
-  align-items: center;
-}
-
-.logo img {
-  margin-right: 10px;
+  font-size: 1.2rem;
 }
 
 .menu {
   display: flex;
 }
 
-.menuItem {
-  margin-right: 26px;
-  font-size: 1.6em;
-  cursor: pointer;
+ul {
+  display: flex;  
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  color: var(--branco);
+  list-style-type: none;
+  padding: 0.5rem 2rem;
   transition: color 0.3s ease; 
 }
 
-.menuItem:hover {
+li:hover {
   color: #dddddd;
 }

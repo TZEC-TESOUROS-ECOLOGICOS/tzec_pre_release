@@ -1,0 +1,46 @@
+#footer {
+    background-color: var(--verde-oliva);
+    color: var(--creme);
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+}
+
+h4 {
+    font-size: 1rem;
+
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+}
+
+ul a {
+
+}
+
+ul li {
+}
+
+.subtitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subtitle {
+
+}
+
+.subtitle h5{
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+.subtitle h6{
+    color: var(--cinza-claro);
+    font-size: 0.8rem;
+    font-weight: 300;
+}

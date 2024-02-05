@@ -2,9 +2,8 @@
 
 .inicio-section {
   padding: 40px;
-  background-color: #ffffff; /* Cor de fundo da seção (branco) */
+  background-color: var(--branco); /* Cor de fundo da seção (branco) */
   text-align: center;
-  font-family: "Londrina Solid", cursive;
 }
 
 .inicio-content {
@@ -24,7 +23,7 @@
 }
 
 .inicio-content h2 {
-  color: #887320;
+  color: var(--verde-oliva);
   font-size: 2.5em;
   margin-bottom: 10px;
 }
@@ -32,26 +31,26 @@
 .inicio-content h3 {
   font-size: 1.8em;
   margin-bottom: 10px;
-  color: #bebebe;
+  color: var(--cinza-claro);
   font-weight: normal;
 }
 
 .inicio-content p {
   font-size: 1.2em;
-  color: #bebebe;
+  color: var(--cinza-claro);
   width: 50%;
   margin-bottom: 20px;
 }
 
-.inicio-content button {
+.inicio-content .botao-primario {
   border-radius: 8px;
   border: none;
   padding: 10px 20px;
   font-size: 1.2em;
-  font-family: "Londrina Solid", cursive;
   font-weight: lighter;
-  background-color: #ff8a01;
-  color: #fff;
+  text-decoration: none;
+  background-color: var(--laranja);
+  color: var(--branco);
   cursor: pointer;
 }
 

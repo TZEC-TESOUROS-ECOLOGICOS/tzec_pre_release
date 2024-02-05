@@ -14,7 +14,7 @@ function InicioSection() {
             curtir a essência única da nossa terra em cada experiência
             culinária!
           </p>
-          <button>Saiba mais!</button>
+          <a className="botao-primario" href="/">Saiba mais</a>
         </div>
         <div className="right-content">
           {/* Adicione o carrossel de fotos aqui */}

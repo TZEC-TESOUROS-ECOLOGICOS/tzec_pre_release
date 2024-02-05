@@ -1,7 +1,23 @@
 // src/components/InicioSection.jsx
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 import "../styles/InicioSection.css";
 
 function InicioSection() {
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        arrows: false,
+        customPaging: function (i) {
+            return <div key={i} className={`custom-dot ${i === 0 ? 'slick-active' : ''}`} />;
+          },
+  };
+
   return (
     <section className="inicio-section">
       <div className="inicio-content">
@@ -11,14 +27,22 @@ function InicioSection() {
           <p>
             Mais do que produtos naturais, oferecemos o sabor autêntico do
             Maranhão, temperado com regionalismo e uma pitada de tradição. Vem
-            curtir a essência única da nossa terra em cada experiência
-            culinária!
+            curtir a essência única da nossa terra!
           </p>
           <a className="botao-primario" href="/">Saiba mais</a>
         </div>
         <div className="right-content">
-          {/* Adicione o carrossel de fotos aqui */}
-          <p>Fotos do carrossel</p>
+          <Slider {...settings}>
+            <div>
+              <img src="/images/carrosel_image_1.png" alt="Imagem 1" />
+            </div>
+            <div>
+              <img src="/images/carrosel_image_2.png" alt="Imagem 2" />
+            </div>
+            <div>
+              <img src="/images/carrosel_image_3.png" alt="Imagem 3" />
+            </div>
+          </Slider>
         </div>
       </div>
     </section>

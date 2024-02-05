@@ -4,6 +4,7 @@
     padding: 4em;
 }
 
+
 .beneficios-content {
     display: flex;
     flex-direction: column;
@@ -13,14 +14,16 @@
 }
 
 .beneficios-content h4{
-    font-size: 3rem;
+    font-size: 4rem;
     color: var(--creme);
     font-weight: normal;
 }
 
 .beneficios-content h5{
-    font-size: 1.2rem;
-    font-weight: lighter;
+    padding-top: 12px;
+    padding-bottom: 18px;
+    font-size: 1.8rem;
+    font-weight: 300;
     color: var(--cinza-claro);
 }
 
@@ -49,14 +52,17 @@
 }
 
 .beneficio-title h6 {
-    font-weight: lighter;
-    font-size: 1.2rem;
+    font-weight: 300;
+    font-size: 1.6rem;
     padding-left: 0.5rem;
+    
 }
 
 .beneficio p {
     color: var(--cinza-claro);
-    font-weight: 100;
+    padding-top: 20px;
+    font-size: 1.2rem;
+    font-weight: 300;
 }
 
 

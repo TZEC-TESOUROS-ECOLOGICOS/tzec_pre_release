@@ -6,6 +6,7 @@
   padding: 40px;
   background-color: var(--branco); /* Cor de fundo da seção (branco) */
   text-align: center;
+  margin: 100px 80px;
 }
 
 .inicio-content {
@@ -16,17 +17,26 @@
 
 .left-content {
   flex: 1;
-  width: 40%;
+  width: 50%;
   text-align: left;
 }
 
 .right-content {
-  width: 40%;
+  width: 50%;
+  text-align: right;
   flex: 1;
-  img {
-    height: 460px;
-    width: 100%;
-  }
+}
+
+.carrossel-container {
+  width: 72%; /* Defina a largura desejada, pode ajustar conforme necessário */
+  margin: 0 auto; /* Centralize o contêiner na página */
+}
+
+.slick-slide img {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
 }
 
 /* Estilize os dots personalizados do carrossel */
@@ -35,7 +45,7 @@
   height: 18px;
   border-radius: 50%;
   background-color: #bebebe; /* Cor dos dots */
-  margin: 0 8px;
+  margin-top: 20px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -52,33 +62,34 @@
 
 .inicio-content h3 {
   font-size: 1.8em;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   color: var(--cinza-claro);
   font-weight: normal;
 }
 
 .inicio-content p {
-  font-size: 1.2em;
+  font-size: 1.4em;
   color: var(--cinza-claro);
   width: 50%;
   font-weight: 300;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
 }
 
-.inicio-content .botao-primario {
+.botao-primario {
   border-radius: 8px;
   border: none;
   padding: 10px 20px;
-  font-size: 1.2em;
-  font-weight: lighter;
+  font-size: 1.6em;
+  font-weight: 300;
   text-decoration: none;
   background-color: var(--laranja);
   color: var(--branco);
+  width: 100%;
   cursor: pointer;
 }
 
 .inicio-content button:hover {
-  background-color: #e07500;
+  background-color: #935a1c;
 }
 
 /* Estilize o carrossel de fotos conforme necessário */

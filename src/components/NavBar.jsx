@@ -6,7 +6,7 @@ function NavBar() {
   return (
     <nav>
       <div className="logo">
-        <img src="/logo_navbar.svg" alt="Logo" height="46" />
+        <img src="/logo_navbar.svg" alt="Logo" height="42" />
       </div>
       <div className="menu">
         <div className="menuItem">Início</div>

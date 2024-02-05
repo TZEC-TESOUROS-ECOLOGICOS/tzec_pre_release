@@ -3,7 +3,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 26px;
+  padding: 20px;
   background-color: var(--laranja);
   color: var(--branco);
   width: 100%;
@@ -26,7 +26,7 @@ nav {
 
 .menuItem {
   margin-right: 26px;
-  font-size: 26px;
+  font-size: 1.6em;
   cursor: pointer;
   transition: color 0.3s ease; 
 }

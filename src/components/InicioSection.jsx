@@ -13,6 +13,7 @@ function InicioSection() {
         slidesToScroll: 1,
         autoplay: true,
         arrows: false,
+        
         customPaging: function (i) {
             return <div key={i} className={`custom-dot ${i === 0 ? 'slick-active' : ''}`} />;
           },
@@ -32,6 +33,7 @@ function InicioSection() {
           <a className="botao-primario" href="/">Saiba mais</a>
         </div>
         <div className="right-content">
+        <div className="carrossel-container">
           <Slider {...settings}>
             <div>
               <img src="/images/carrosel_image_1.png" alt="Imagem 1" />
@@ -43,6 +45,7 @@ function InicioSection() {
               <img src="/images/carrosel_image_3.png" alt="Imagem 3" />
             </div>
           </Slider>
+          </div>
         </div>
       </div>
     </section>

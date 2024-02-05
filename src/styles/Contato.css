@@ -1,4 +1,87 @@
-.contato {
-    height: 50vh;
+#contato {
+    height: 100%;
     background-color: var(--laranja);
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    color: var(--creme);
+    padding: 0 4rem;
+}
+
+#contato .left-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contato .left-content img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+}
+
+#contato .right-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+#contato .right-content h4 {
+    font-size: 4rem;
+}
+
+.formulario {
+    width: 100%;
+}
+
+form {
+    display: grid;
+    gap: 2rem;
+}
+
+.input-group {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr); /* Dois campos por linha */
+}
+
+.campo {
+    display: grid;
+    gap: 0.5rem;
+}
+
+.campo label {
+    font-weight: bold;
+}
+
+.campo input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 0.2rem;
+}
+
+/* botão */
+
+button {
+    font-family: 'Londrina Solid', sans-serif;
+    border-radius: 8px;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.6em;
+    font-weight: 300;
+    text-decoration: none;
+    background-color: var(--branco);
+    color: var(--marrom);
+    width: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+button:hover {
+    background-color: #935a1c;
 }

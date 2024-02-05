@@ -36,13 +36,13 @@ function InicioSection() {
         <div className="carrossel-container">
           <Slider {...settings}>
             <div>
-              <img src="/images/carrosel_image_1.png" alt="Imagem 1" />
+              <img src="/images/carrossel_01.png" alt="Imagem 1" />
             </div>
             <div>
-              <img src="/images/carrosel_image_2.png" alt="Imagem 2" />
+              <img src="/images/carrossel_02.png" alt="Imagem 2" />
             </div>
             <div>
-              <img src="/images/carrosel_image_3.png" alt="Imagem 3" />
+              <img src="/images/carrossel_03.png" alt="Imagem 3" />
             </div>
           </Slider>
           </div>

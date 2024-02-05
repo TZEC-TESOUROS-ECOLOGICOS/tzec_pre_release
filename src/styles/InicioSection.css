@@ -1,10 +1,13 @@
 /* src/styles/InicioSection.css */
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
 
 .inicio-section {
-  padding: 40px;
+  padding: 80px;
   background-color: #ffffff; /* Cor de fundo da seção (branco) */
   text-align: center;
-  font-family: "Londrina Solid", cursive;
+  align-items: center;
+  font-family: "Londrina Solid";
 }
 
 .inicio-content {
@@ -20,7 +23,27 @@
 }
 
 .right-content {
+  width: 40%;
   flex: 1;
+  img {
+    height: 460px;
+    width: 100%;
+  }
+}
+
+/* Estilize os dots personalizados do carrossel */
+.custom-dot {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #bebebe; /* Cor dos dots */
+  margin: 0 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.custom-dot.slick-active {
+  background-color: #e07500; /* Cor quando o dot está ativo */
 }
 
 .inicio-content h2 {
@@ -33,13 +56,14 @@
   font-size: 1.8em;
   margin-bottom: 10px;
   color: #bebebe;
-  font-weight: normal;
+  font-weight: 300;
 }
 
 .inicio-content p {
   font-size: 1.2em;
   color: #bebebe;
   width: 50%;
+  font-weight: 300;
   margin-bottom: 20px;
 }
 
@@ -48,8 +72,10 @@
   border: none;
   padding: 10px 20px;
   font-size: 1.2em;
-  font-family: "Londrina Solid", cursive;
-  font-weight: lighter;
+  font-family: "Londrina Solid";
+  font-size: 38px;
+  font-weight: 400;
+  width: 50%;
   background-color: #ff8a01;
   color: #fff;
   cursor: pointer;

@@ -1,4 +1,26 @@
 #depoimentos {
     height: 50vh;
     background-color: var(--creme);
+    text-align: center;
+    padding: 5rem 0rem;
+}
+
+#depoimentos .depoimentos-titulo {
+    font-size: 4rem;
+    color: var(--laranja);
+    font-weight: normal;
+}
+
+#depoimentos .depoimentos-subtitulo {
+    padding-top: 12px;
+    padding-bottom: 18px;
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: var(--cinza-claro);
+}
+
+.depoimentos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }

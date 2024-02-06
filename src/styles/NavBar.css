@@ -3,7 +3,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.2rem;
+  padding: 1rem 5.5rem;
   background-color: var(--laranja);
   color: var(--branco);
   width: 100%;

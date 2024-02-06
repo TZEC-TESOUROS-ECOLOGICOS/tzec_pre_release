@@ -15,8 +15,12 @@ nav {
   display: flex;
 }
 
+.item-menu {
+  font-size: 1.2rem;
+}
+
 ul {
-  display: flex;  
+  display: flex; 
 }
 
 a {
@@ -27,7 +31,7 @@ li {
   color: var(--branco);
   list-style-type: none;
   padding: 0.5rem 2rem;
-  transition: color 0.3s ease; 
+  transition: color 0.3s ease;
 }
 
 li:hover {

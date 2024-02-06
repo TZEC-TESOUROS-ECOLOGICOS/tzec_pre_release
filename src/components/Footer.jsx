@@ -8,9 +8,9 @@ function Footer() {
         <h4>Vem papear com a gente!</h4>
         <div className="social-media">
             <ul>
-                <a href="mailto:email@provedor.com.br"><li><Envelope /></li></a>
-                <a href="https://www.wa.me/5599 "><li><Whatsapp /></li></a>
-                <a href="https://www.instagram.com/tzec"><li><Instagram /></li></a>
+                <a href="mailto:tzececologicos@gmail.com"><li><Envelope /></li></a>
+                <a href="https://www.wa.me/5599991526997 "><li><Whatsapp /></li></a>
+                <a href="https://www.instagram.com/tzec_"><li><Instagram /></li></a>
             </ul>
         </div>
         <div className="subtitle">

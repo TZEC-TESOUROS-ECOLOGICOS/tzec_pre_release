@@ -1,6 +1,6 @@
 // src/components/Footer.jsx
 import "../styles/Footer.css";
-import { Mail, Phone, Instagram, Facebook } from "react-feather";
+import { Envelope, Whatsapp, Instagram } from 'react-bootstrap-icons';
 
 function Footer() {
   return (
@@ -8,10 +8,9 @@ function Footer() {
         <h4>Vem papear com a gente!</h4>
         <div className="social-media">
             <ul>
-                <a href="mailto:email@provedor.com.br"><li><Mail /></li></a>
-                <a href="https://www.wa.me/5599 "><li><Phone /></li></a>
+                <a href="mailto:email@provedor.com.br"><li><Envelope /></li></a>
+                <a href="https://www.wa.me/5599 "><li><Whatsapp /></li></a>
                 <a href="https://www.instagram.com/tzec"><li><Instagram /></li></a>
-                <a href="https://www.instagram.com/tzec"><li><Facebook /></li></a>
             </ul>
         </div>
         <div className="subtitle">

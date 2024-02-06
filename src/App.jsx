@@ -7,6 +7,7 @@ import Contato from "./components/Contato";
 import Footer from "./components/Footer";
 import "../src/styles/App.css";
 
+
 function App() {
   return (
     <div className="app-container">

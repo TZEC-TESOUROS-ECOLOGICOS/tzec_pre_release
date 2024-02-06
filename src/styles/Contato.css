@@ -58,11 +58,14 @@ form {
 
 .campo input,
 textarea {
-    width: 100%;
     padding: 8px;
     box-sizing: border-box;
     border: 0;
     border-radius: 0.2rem;
+}
+
+.campo textarea {
+    width: 50rem;
 }
 
 /* botão */

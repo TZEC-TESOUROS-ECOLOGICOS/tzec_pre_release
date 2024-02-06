@@ -3,25 +3,25 @@
     color: var(--creme);
     display: flex;
     flex-direction: column;
-    align-items: center ;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
 }
 
 h4 {
-    font-size: 1rem;
-
+    font-size: 1.4rem;
+    font-weight: 400;
+    padding: 0.2rem 0;
 }
 
 ul {
     display: flex;
     flex-direction: row;
-    padding: 1rem;
-}
-
-ul a {
-
+    padding: 1rem 0;
 }
 
 ul li {
+    font-size: 2rem;
 }
 
 .subtitle {
@@ -30,17 +30,13 @@ ul li {
     align-items: center;
 }
 
-.subtitle {
-
-}
-
 .subtitle h5{
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 300;
 }
 
 .subtitle h6{
     color: var(--cinza-claro);
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 300;
 }

@@ -1,5 +1,5 @@
 #depoimentos {
-    height: 50vh;
+    height: auto;
     background-color: var(--creme);
     text-align: center;
     padding: 5rem 0rem;
@@ -21,6 +21,8 @@
 
 .depoimentos-container {
     display: flex;
+    flex-direction: row;
+    gap: 2rem;
     flex-wrap: wrap;
     justify-content: center;
 }

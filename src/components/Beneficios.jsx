@@ -23,7 +23,7 @@ function Beneficios() {
 
           <Beneficio
             icon={<HouseHeart size={26} />}
-            title="Apoio à Economia Local."
+            title="Apoio à Economia Local"
             description="Valorizamos a cultura da nossa região maranhense. Cada compra apoia a economia local, cultivando prosperidade."
           />
         </div>

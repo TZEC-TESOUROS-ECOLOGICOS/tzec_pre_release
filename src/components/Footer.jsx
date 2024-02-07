@@ -8,12 +8,12 @@ function Footer() {
       <h4>Vem seguir a gente!</h4>
       <div className="social-media">
         <ul>
-          <a href="mailto:tzececologicos@gmail.com">
+          <a href="mailto:contato@tzec.com.br">
             <li>
               <Envelope />
             </li>
           </a>
-          <a href="https://www.wa.me/5599991526997 ">
+          <a href="https://api.whatsapp.com/send?phone=5599984052737&text=Ol%C3%A1%2C%20gostaria%20de%20falar%20sobre%20a%20TZEC%20%F0%9F%98%80%F0%9F%8D%807">
             <li>
               <Whatsapp />
             </li>

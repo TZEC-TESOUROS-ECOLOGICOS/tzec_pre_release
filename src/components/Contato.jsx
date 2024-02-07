@@ -7,10 +7,10 @@ function Contato() {
 
     emailjs
       .sendForm(
-        "gmailMessage",
-        "template_k1z7tkr",
+        "service_75bny0f",
+        "template_cnr2wgc",
         e.target,
-        "pCMyna8XEcAScWlbU"
+        "abJjoCFokFvazmZ1i"
       )
       .then(
         (result) => {
@@ -53,7 +53,7 @@ function Contato() {
               </div>
 
               <div className="campo">
-                <label htmlFor="subject">Título:</label>
+                <label htmlFor="subject">Assunto:</label>
                 <input type="text" id="titulo" name="subject" required />
               </div>
             </div>

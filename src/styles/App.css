@@ -13,8 +13,6 @@
 .app-container {
   margin: 0;
   padding: 0;
-  
-
   background-color: var(--branco);
   font-family: "Londrina Solid", cursive;
 }

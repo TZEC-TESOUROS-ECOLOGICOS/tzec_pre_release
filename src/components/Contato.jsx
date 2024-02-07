@@ -1,56 +1,79 @@
 import "../styles/Contato.css";
+import emailjs from "emailjs-com";
 
 function Contato() {
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "gmailMessage",
+        "template_k1z7tkr",
+        e.target,
+        "pCMyna8XEcAScWlbU"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert("Mensagem enviada com sucesso!");
+        },
+        (error) => {
+          console.log(error.text);
+          alert("Ocorreu um erro ao enviar a mensagem.");
+        }
+      );
+
+    e.target.reset();
+  }
   return (
     <section id="contato">
       <div className="left-content">
         <img src="/images/contato-image.png" alt="" />
       </div>
       <div className="right-content">
-        <h4>Fale conosco</h4>
+        <h4>Bora papear!</h4>
         <div className="formulario">
+          <form onSubmit={sendEmail}>
+            <div className="input-group">
+              <div className="campo">
+                <label htmlFor="name">Nome:</label>
+                <input type="text" id="nome" name="name" required />
+              </div>
 
-
-        <form>
-          <div className="input-group">
-            <div className="campo">
-              <label htmlFor="nome">Nome:</label>
-              <input type="text" id="nome" name="nome" required />
+              <div className="campo">
+                <label htmlFor="phone">Telefone (opcional):</label>
+                <input type="tel" id="telefone" name="phone" />
+              </div>
             </div>
 
-            <div className="campo">
-              <label htmlFor="telefone">Telefone (opcional):</label>
-              <input type="tel" id="telefone" name="telefone" />
+            <div className="input-group">
+              <div className="campo">
+                <label htmlFor="email">E-mail:</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+
+              <div className="campo">
+                <label htmlFor="subject">Título:</label>
+                <input type="text" id="titulo" name="subject" required />
+              </div>
             </div>
-          </div>
 
-          <div className="input-group">
-            <div className="campo">
-              <label htmlFor="email">E-mail:</label>
-              <input type="email" id="email" name="email" required />
+            <div className="input-group-mensagem">
+              <label htmlFor="message">Mensagem:</label>
+              <textarea
+                id="mensagem"
+                name="message"
+                rows="4"
+                required
+              ></textarea>
             </div>
 
-            <div className="campo">
-              <label htmlFor="titulo">Título:</label>
-              <input type="text" id="titulo" name="titulo" required />
-            </div>
-          </div>
-
-          <div className="input-group mensagem">
-            <label htmlFor="mensagem">Mensagem:</label>
-            <br />
-            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
-          </div>
-
-          <button type="submit">Enviar</button>
-        </form>
-
-
-      </div>
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default Contato
-
+export default Contato;

@@ -1,29 +1,59 @@
 #beneficios {
-    height: 50vh;
-    background-color: var(--verde-oliva);
-    padding: 4em;
+  height: 50vh;
+  background-color: var(--verde-oliva);
+  padding: 4em;
 }
-
 
 .beneficios-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.beneficios-content h4 {
+  font-size: 4rem;
+  color: var(--creme);
+  font-weight: normal;
+}
+
+.beneficios-content h5 {
+  padding-top: 12px;
+  padding-bottom: 18px;
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: var(--cinza-claro);
+}
+
+/* Estilize a seção de benefícios para dispositivos móveis */
+@media screen and (max-width: 768px) {
+  #beneficios {
+    height: auto; /* Defina a altura para automático para acomodar o conteúdo */
+    padding: 2em; /* Reduza o padding para economizar espaço em dispositivos móveis */
+  }
+
+  .beneficio-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column; /* Altera a direção do flex para vertical */
+    align-items: center; /* Centraliza os itens na vertical */
+  }
+
+  .beneficios-content{
+    text-align: center;
+  }
+
+  .beneficio-title{
     justify-content: center;
-    height: 100%;
-}
+  }
 
-.beneficios-content h4{
-    font-size: 4rem;
-    color: var(--creme);
-    font-weight: normal;
-}
+  .beneficios-content h4 {
+    font-size: 2.5rem; /* Reduza o tamanho do título para dispositivos móveis */
+  }
 
-.beneficios-content h5{
-    padding-top: 12px;
-    padding-bottom: 18px;
-    font-size: 1.8rem;
-    font-weight: 300;
-    color: var(--cinza-claro);
+  .beneficios-content h5 {
+    font-size: 1.5rem; /* Reduza o tamanho do subtítulo para dispositivos móveis */
+    padding-top: 8px; /* Reduza o espaçamento superior do subtítulo */
+    padding-bottom: 12px; /* Reduza o espaçamento inferior do subtítulo */
+  }
 }
-

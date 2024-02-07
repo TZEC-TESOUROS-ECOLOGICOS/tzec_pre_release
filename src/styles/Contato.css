@@ -1,90 +1,128 @@
 #contato {
-    height: 100%;
-    background-color: var(--laranja);
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    color: var(--creme);
-    padding: 0 4rem;
+  height: 100%;
+  background-color: var(--laranja);
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  color: var(--creme);
+  padding: 0 4rem;
 }
 
 #contato .left-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #contato .left-content img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
 }
 
 #contato .right-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
 }
 
 #contato .right-content h4 {
-    font-size: 4rem;
+  font-size: 4rem;
 }
 
 .formulario {
-    width: 100%;
+  width: 100%;
 }
 
 form {
-    display: grid;
-    gap: 2rem;
+  display: grid;
+  gap: 2rem;
 }
 
 .input-group {
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(2, 1fr); /* Dois campos por linha */
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr); /* Dois campos por linha */
 }
 
 .campo {
-    display: grid;
-    gap: 0.5rem;
+  display: grid;
+  gap: 0.5rem;
 }
 
 .campo label {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .campo input,
 textarea {
-    padding: 8px;
-    box-sizing: border-box;
-    border: 0;
-    border-radius: 0.2rem;
-}
-
-.campo textarea {
-    width: 50rem;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 0.2rem;
 }
 
 /* botão */
 
 button {
-    font-family: 'Londrina Solid', sans-serif;
-    border-radius: 8px;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1.6em;
-    font-weight: 300;
-    text-decoration: none;
-    background-color: var(--branco);
-    color: var(--marrom);
-    width: 50%;
-    cursor: pointer;
-    transition: background-color 0.3s ease; 
+  font-family: "Londrina Solid", sans-serif;
+  border-radius: 8px;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.6em;
+  font-weight: 300;
+  text-decoration: none;
+  background-color: var(--branco);
+  color: var(--marrom);
+  width: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #935a1c;
+  background-color: #935a1c;
+}
+
+.input-group-mensagem {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Estilize a seção de contato para dispositivos móveis */
+@media screen and (max-width: 768px) {
+  #contato {
+    flex-direction: column; /* Altera a direção do flex para vertical em dispositivos móveis */
+    padding: 1rem; /* Reduza o padding para economizar espaço em dispositivos móveis */
+    align-items: center; /* Centraliza os itens na vertical em dispositivos móveis */
+    text-align: center; /* Centraliza o texto em dispositivos móveis */
+  }
+
+  #contato .left-content img {
+    height: 450px; /* Ajusta a altura da imagem para se adequar ao conteúdo em dispositivos móveis */
+    width: auto;
+  }
+
+  .input-group {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(1, 1fr); /* Dois campos por linha */
+    text-align: left;
+  }
+
+  #contato .right-content {
+    width: 100%; /* Define a largura total para ocupar toda a largura disponível em dispositivos móveis */
+    margin-top: 2rem; /* Adiciona espaço entre o conteúdo e o formulário em dispositivos móveis */
+    text-align: start; /* Centraliza o texto em dispositivos móveis */
+  }
+
+  .campo textarea {
+    width: 100%; /* Define a largura total para ocupar toda a largura disponível em dispositivos móveis */
+  }
+
+  button {
+    width: 100%; /* Define a largura total para ocupar toda a largura disponível em dispositivos móveis */
+  }
 }

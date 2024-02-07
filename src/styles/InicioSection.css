@@ -87,11 +87,45 @@
   color: var(--branco);
   width: 100%;
   cursor: pointer;
-  transition: background-color 0.3s ease; 
+  transition: background-color 0.3s ease;
 }
 
 .inicio-content .botao-primario:hover {
   background-color: #935a1c;
 }
 
-/* Estilize o carrossel de fotos conforme necessário */
+/* Estilize a seção de início para dispositivos móveis */
+@media screen and (max-width: 768px) {
+  #inicio {
+    margin: 60px 0;
+    height: auto;
+    h2 {
+      font-size: 52px;
+    }
+    h3 {
+      font-size: 28px;
+    }
+    p {
+      font-size: 24px;
+      width: 100%;
+    }
+  }
+  .inicio-content {
+    flex-direction: column; /* Altera a direção do flex para vertical */
+    text-align: center; /* Centraliza o conteúdo verticalmente */
+    margin: 0; /* Remova as margens laterais */
+  }
+
+  .left-content {
+    text-align: center;
+    width: 100%;
+  }
+  .right-content {
+    width: 100%; /* Define a largura total para ocupar toda a largura disponível */
+  }
+
+  .right-content {
+    padding-bottom: 60px; /* Adiciona espaço entre o conteúdo esquerdo e direito */
+    order: -1; /* Altera a ordem para exibir o right-content acima do left-content */
+  }
+}

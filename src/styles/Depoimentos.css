@@ -1,28 +1,52 @@
 #depoimentos {
-    height: auto;
-    background-color: var(--creme);
-    text-align: center;
-    padding: 5rem 0rem;
+  height: auto;
+  background-color: var(--creme);
+  text-align: center;
+  padding: 5rem 0rem;
 }
 
 #depoimentos .depoimentos-titulo {
-    font-size: 4rem;
-    color: var(--laranja);
-    font-weight: normal;
+  font-size: 4rem;
+  color: var(--laranja);
+  font-weight: normal;
 }
 
 #depoimentos .depoimentos-subtitulo {
-    padding-top: 12px;
-    padding-bottom: 18px;
-    font-size: 1.8rem;
-    font-weight: 300;
-    color: var(--cinza-claro);
+  padding-top: 12px;
+  padding-bottom: 18px;
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: var(--cinza-claro);
 }
 
 .depoimentos-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Estilize a seção de depoimentos para dispositivos móveis */
+@media screen and (max-width: 768px) {
+  #depoimentos {
+    padding: 3rem 0rem; /* Reduza o padding para economizar espaço em dispositivos móveis */
     display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+  }
+
+  .depoimentos-container {
+    flex-direction: column; /* Altera a direção do flex para vertical em dispositivos móveis */
+    align-items: center; /* Centraliza os itens na vertical em dispositivos móveis */
+  }
+
+  #depoimentos .depoimentos-titulo {
+    font-size: 2.5rem; /* Reduza o tamanho do título para dispositivos móveis */
+  }
+
+  #depoimentos .depoimentos-subtitulo {
+    font-size: 1.5rem; /* Reduza o tamanho do subtítulo para dispositivos móveis */
+    padding-top: 8px; /* Reduza o espaçamento superior do subtítulo */
+    padding-bottom: 12px; /* Reduza o espaçamento inferior do subtítulo */
+  }
 }

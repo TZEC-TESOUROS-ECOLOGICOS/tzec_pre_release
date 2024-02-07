@@ -97,7 +97,8 @@
 /* Estilize a seção de início para dispositivos móveis */
 @media screen and (max-width: 768px) {
   #inicio {
-    margin: 60px 0;
+    margin: 0 2rem;
+    padding: 8rem 0;
     height: auto;
     h2 {
       font-size: 52px;

@@ -83,6 +83,7 @@ button {
 
 button:hover {
   background-color: #935a1c;
+  color: var(--branco);
 }
 
 .input-group-mensagem {
@@ -112,14 +113,22 @@ button:hover {
     text-align: left;
   }
 
+  .input-group-mensagem {
+    text-align: left;
+  }
+
   #contato .right-content {
     width: 100%; /* Define a largura total para ocupar toda a largura disponível em dispositivos móveis */
     margin-top: 2rem; /* Adiciona espaço entre o conteúdo e o formulário em dispositivos móveis */
-    text-align: start; /* Centraliza o texto em dispositivos móveis */
+    text-align: center; /* Centraliza o texto em dispositivos móveis */
   }
 
   .campo textarea {
     width: 100%; /* Define a largura total para ocupar toda a largura disponível em dispositivos móveis */
+  }
+
+  button:hover {
+    background-color: #935a1c;
   }
 
   button {

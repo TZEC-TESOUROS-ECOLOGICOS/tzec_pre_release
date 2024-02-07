@@ -1,5 +1,6 @@
-/* src/styles/NavBar.css */
-nav {
+/* src/styles/DesktopNavBar.css */
+
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -9,6 +10,19 @@ nav {
   width: 100%;
   box-sizing: border-box;
   font-size: 1.2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: top 0.3s ease;
+}
+
+.navbar.hidden {
+  top: -90px;
+}
+
+.logo img {
+  height: 100%;
 }
 
 .menu {
@@ -16,11 +30,13 @@ nav {
 }
 
 .item-menu {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 ul {
-  display: flex; 
+  display: flex;
+  list-style: none;
+  padding: 0;
 }
 
 a {
@@ -29,8 +45,7 @@ a {
 
 li {
   color: var(--branco);
-  list-style-type: none;
-  padding: 0.5rem 2rem;
+  padding: 0 2rem;
   transition: color 0.3s ease;
 }
 

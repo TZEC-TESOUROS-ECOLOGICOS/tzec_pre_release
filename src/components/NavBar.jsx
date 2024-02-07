@@ -1,23 +1,21 @@
-// src/components/NavBar.jsx
-import "../styles/NavBar.css";
-import "../styles/App.css";
+import { useEffect, useState } from "react";
+import MobileNavBar from "./MobileNavBar";
+import DesktopNavBar from "./DesktopNavBar";
 
 function NavBar() {
-  return (
-    <nav>
-      <div className="logo">
-        <img src="/logo_navbar.svg" alt="Logo" height="42" />
-      </div>
-      <div className="menu">
-        <ul>
-          <a href="#"><li className="item-menu">Início</li></a>
-          <a href="#beneficios"><li className="item-menu">Benefícios</li></a>
-          <a href="#depoimentos"><li className="item-menu">Depoimentos</li></a>
-          <a href="#contato"><li className="item-menu">Contato</li></a>
-        </ul>
-      </div>
-    </nav>
-  );
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Verifica se o viewport tem uma largura menor que 768px para decidir se a navbar móvel deve ser exibida
+  useEffect(() => {
+    function handleResize() {
+      setIsMobile(window.innerWidth < 768);
+    }
+    window.addEventListener("resize", handleResize);
+    handleResize();
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  return <>{isMobile ? <MobileNavBar /> : <DesktopNavBar />}</>;
 }
 
 export default NavBar;

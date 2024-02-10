@@ -19,11 +19,11 @@ const Depoimento = ({ comment, icon, title, description }) => {
           </div>
         </div>
         <div className="estrelas">
-          {<StarFill color="yellow" size={20} />}
-          {<StarFill color="yellow" size={20} />}
-          {<StarFill color="yellow" size={20} />}
-          {<StarFill color="yellow" size={20} />}
-          {<Star color="yellow" size={20} />}
+          {<StarFill color="#ff8a00" size={20} />}
+          {<StarFill color="#ff8a00" size={20} />}
+          {<StarFill color="#ff8a00" size={20} />}
+          {<StarFill color="#ff8a00" size={20} />}
+          {<Star color="#ff8a00" size={20} />}
         </div>
       </div>
     </div>

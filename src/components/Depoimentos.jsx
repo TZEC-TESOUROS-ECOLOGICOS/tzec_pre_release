@@ -21,9 +21,9 @@ function Depoimentos() {
           comment={
             "Os produtos da empresa trazem um pedacinho do Maranhão até minha casa - é como ter um pedacinho da região na minha mesa todos os dias!"
           }
-          icon={"/images/depoimento-02.png"}
-          title={"Inês Estente"}
-          description={"Empreendedora"}
+          icon={"/images/depoimento-02.jpeg"}
+          title={"Yasmin Milhomem"}
+          description={"Entusiasta de produtos naturais"}
         />
         <Depoimento
           comment={

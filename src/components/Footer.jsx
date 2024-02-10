@@ -27,7 +27,7 @@ function Footer() {
       </div>
       <div className="subtitle">
         <h5>Tesouros Ecológicos</h5>
-        <h6>Gostinho maranhese na sua casa</h6>
+        <h6>Gostinho maranhense na sua casa</h6>
       </div>
     </section>
   );
